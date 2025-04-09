@@ -54,6 +54,13 @@ body {
 }
 
 .card-img-top {
-  height: 300px;
-  object-fit: cover;
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  max-height: 300px; /* Establece una altura máxima para evitar distorsiones */
+  object-fit: contain; /* Muestra toda la imagen sin cortar */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+body {
+  background-color: #f8f9fa;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css'; // Asegúrate de que la ruta sea correcta
 
 const CardDragonBall = ({ character }) => {
   return (

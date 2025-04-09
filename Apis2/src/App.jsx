@@ -1,7 +1,7 @@
-
-import './App.css'
+import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import DragonBall from './pages/DragonBall'; // Página de personajes
+import DragonBall from './pages/DragonBall';
+import RickAndMorty from './pages/RickAndMorty';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
-              Dragon Ball App
+              Multi-Universe App
             </Link>
             <button
               className="navbar-toggler"
@@ -26,13 +26,13 @@ function App() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
-                    Inicio
+                  <Link className="nav-link" to="/dragonball">
+                    Dragon Ball
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/dragonball">
-                    Personajes
+                  <Link className="nav-link" to="/rickandmorty">
+                    Rick and Morty
                   </Link>
                 </li>
               </ul>
@@ -40,7 +40,8 @@ function App() {
           </div>
         </nav>
         <Routes>
-          <Route path="/" element={<DragonBall />} />
+          <Route path="/dragonball" element={<DragonBall />} />
+          <Route path="/rickandmorty" element={<RickAndMorty />} />
         </Routes>
       </div>
     </Router>
