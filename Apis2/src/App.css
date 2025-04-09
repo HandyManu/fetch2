@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.card {
+  margin: 15px 0;
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
